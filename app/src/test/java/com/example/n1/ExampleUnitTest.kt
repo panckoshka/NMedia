@@ -1,4 +1,4 @@
-package com.example.n1
+package com.example.Nmedia
 
 import org.junit.Test
 
