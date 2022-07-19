@@ -18,4 +18,10 @@
     <dimen name="viewsCountEnd">8dp</dimen>
     <dimen name="avatarStart">8dp</dimen>
     <dimen name="avatarTop">4dp</dimen>
+    <dimen name="headerMarginTop">16dp</dimen>
+    <dimen name="headerMarginEnd">16dp</dimen>
+    <dimen name="headerMarginStart">16dp</dimen>
+    <dimen name="timeMarginTop">4dp</dimen>
+    <dimen name="timeMarginStart">16dp</dimen>
+    <dimen name="timeMarginEnd">16dp</dimen>
 </resources>
