@@ -3,11 +3,11 @@
     <dimen name="avatarNMWidth">64dp</dimen>
     <dimen name="avatarNMHeight">64dp</dimen>
     <dimen name="avatarPadding">8dp</dimen>
-    <dimen name="menuTop">10dp</dimen>
+    <dimen name="menuTop">16dp</dimen>
     <dimen name="viewSmallWidth">28dp</dimen>
     <dimen name="viewSmallHeight">28dp</dimen>
     <dimen name="viewSmallStart">8dp</dimen>
-    <dimen name="hearderTop">8dp</dimen>
+    <dimen name="hearderTop">24dp</dimen>
     <dimen name="storyStart">8dp</dimen>
     <dimen name="storyTop">8dp</dimen>
     <dimen name="storyEnd">8dp</dimen>
@@ -16,4 +16,6 @@
     <dimen name="httpsSize">14sp</dimen>
     <dimen name="countTextPadding">4dp</dimen>
     <dimen name="viewsCountEnd">8dp</dimen>
+    <dimen name="avatarStart">8dp</dimen>
+    <dimen name="avatarTop">4dp</dimen>
 </resources>

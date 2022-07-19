@@ -10,6 +10,7 @@
         android:id="@+id/avatarNM"
         android:layout_width="@dimen/avatarNMWidth"
         android:layout_height="@dimen/avatarNMHeight"
+        android:layout_margin="@dimen/avatarStart"
         android:contentDescription="@string/logo"
         android:padding="@dimen/avatarPadding"
         android:src="@drawable/ic_netology"
@@ -20,7 +21,7 @@
         android:id="@+id/menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/menuTop"
+        android:layout_margin="16dp"
         android:contentDescription="@string/menu"
         android:src="@drawable/ic_baseline_more_vert_24"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +33,8 @@
         android:layout_height="@dimen/viewSmallHeight"
         android:layout_marginStart="@dimen/viewSmallStart"
         android:contentDescription="@string/like"
-        android:src="@drawable/ic_baseline_favorite_border_24"
+        android:src="@drawable/ic_like"
+        android:layout_marginTop="@dimen/storyTop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/barrier2" />
 
@@ -43,6 +45,7 @@
         android:layout_marginStart="@dimen/viewSmallStart"
         android:contentDescription="@string/like"
         android:src="@drawable/ic_outline_share_24"
+        android:layout_marginTop="@dimen/storyTop"
         app:layout_constraintStart_toEndOf="@id/likeCount"
         app:layout_constraintTop_toTopOf="@id/barrier2" />
 
@@ -53,6 +56,8 @@
         android:layout_marginStart="@dimen/viewSmallStart"
         android:contentDescription="@string/like"
         android:src="@drawable/ic_baseline_visibility_24"
+        android:layout_marginEnd="@dimen/avatarStart"
+        android:layout_marginTop="@dimen/storyTop"
         app:layout_constraintEnd_toStartOf="@id/viewsCount"
         app:layout_constraintTop_toTopOf="@id/barrier2" />
 
@@ -60,7 +65,9 @@
         android:id="@+id/header"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/hearderTop"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:ellipsize="end"
         android:lines="1"
         android:text="@string/header"
@@ -72,6 +79,9 @@
         android:id="@+id/time"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:ellipsize="end"
         android:lines="1"
         android:text="@string/time"
@@ -87,24 +97,15 @@
         android:layout_marginTop="@dimen/storyTop"
         android:layout_marginEnd="@dimen/storyEnd"
         android:text="@string/story"
+        android:autoLink="web"
         app:layout_constraintTop_toBottomOf="@id/barrier1" />
-
-    <TextView
-        android:id="@+id/https"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/httpsStart"
-        android:autoLink="all"
-        android:minHeight="@dimen/httpsHeight"
-        android:text="@string/https"
-        android:textSize="@dimen/httpsSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/story" />
 
     <TextView
         android:id="@+id/likeCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/storyTop"
+        android:layout_marginStart="@dimen/avatarStart"
         android:ellipsize="end"
         android:lines="1"
         android:padding="@dimen/countTextPadding"
@@ -116,6 +117,8 @@
         android:id="@+id/repostCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/storyTop"
+        android:layout_marginStart="@dimen/avatarStart"
         android:ellipsize="end"
         android:lines="1"
         android:padding="@dimen/countTextPadding"
@@ -127,6 +130,8 @@
         android:id="@+id/viewsCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/storyTop"
+        android:layout_marginStart="@dimen/avatarStart"
         android:layout_marginEnd="@dimen/viewsCountEnd"
         android:ellipsize="end"
         android:lines="1"
@@ -147,7 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="https" />
+        app:constraint_referenced_ids="story" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
