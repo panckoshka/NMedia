@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/like"
+        android:id="@+id/iv_likes"
         android:layout_width="@dimen/viewSmallWidth"
         android:layout_height="@dimen/viewSmallHeight"
         android:layout_marginStart="@dimen/viewSmallStart"
@@ -40,14 +40,14 @@
         app:layout_constraintTop_toTopOf="@id/barrier2" />
 
     <ImageView
-        android:id="@+id/repost"
+        android:id="@+id/iv_reposts"
         android:layout_width="@dimen/viewSmallWidth"
         android:layout_height="@dimen/viewSmallHeight"
         android:layout_marginStart="@dimen/viewSmallStart"
         android:contentDescription="@string/like"
         android:src="@drawable/ic_outline_share_24"
         android:layout_marginTop="@dimen/storyTop"
-        app:layout_constraintStart_toEndOf="@id/likeCount"
+        app:layout_constraintStart_toEndOf="@id/tv_likes"
         app:layout_constraintTop_toTopOf="@id/barrier2" />
 
     <ImageView
@@ -103,7 +103,7 @@
     <!--        android:text="@string/story"-->
 
     <TextView
-        android:id="@+id/likeCount"
+        android:id="@+id/tv_likes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/storyTop"
@@ -112,11 +112,11 @@
         android:lines="1"
         android:padding="@dimen/countTextPadding"
         android:text="@string/likeCount"
-        app:layout_constraintStart_toEndOf="@id/like"
+        app:layout_constraintStart_toEndOf="@id/iv_likes"
         app:layout_constraintTop_toBottomOf="@id/barrier2" />
 
     <TextView
-        android:id="@+id/repostCount"
+        android:id="@+id/tv_reposts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/storyTop"
@@ -125,7 +125,7 @@
         android:lines="1"
         android:padding="@dimen/countTextPadding"
         android:text="@string/repostCount"
-        app:layout_constraintStart_toEndOf="@id/repost"
+        app:layout_constraintStart_toEndOf="@id/iv_reposts"
         app:layout_constraintTop_toBottomOf="@id/barrier2" />
 
     <TextView
