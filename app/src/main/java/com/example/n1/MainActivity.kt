@@ -17,6 +17,14 @@ class MainActivity : AppCompatActivity() {
 
         val viewModel by viewModels<PostViewModel>()
 
+//        binding.root.setOnClickListener{
+//            println("yyy")
+//        }
+//
+//        binding.avatarNM.setOnClickListener {
+//            println("xxx")
+//        }
+
         binding.ivReposts.setOnClickListener {
             viewModel.repostsCount()
         }
